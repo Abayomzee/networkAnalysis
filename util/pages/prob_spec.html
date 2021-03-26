@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/responsiveness.css">
+
+    <script src="../../scripts/js/jQuery.min.js"></script>
+</head>
+<body>
+
+    <!-- Problem Specification Section -->
+
+    <div class="problem_spec_div">
+        <div class="problem_spec_header">            
+            <p>
+                Problem Specification
+            </p>
+        </div>
+        <div class="problem_spec_body">
+            <div class="row">                
+                <div class="col-m-12">
+                        <label for="problem_title"> &nbsp; &nbsp; &nbsp; &nbsp; Problem Title </label><br>
+                        <input type="text" name="problem_name" id="prob_name">
+                </div>
+            </div><br><br>
+            <div class="row">
+                <div class="col-m-6">
+                        <label for="problem_title"> &nbsp; &nbsp; Number of Activities </label><br>
+                        <input type="text" name="problem_number_of_activity" id="activity_num">
+                </div>
+                <div class="col-m-6">
+                        <label for="problem_title"> &nbsp; &nbsp; Time Unit </label><br>
+                        <input type="text" name="problem_unit" id="time_unit">
+                </div>                
+            </div>    
+            <div class="row">
+                <div class="col-m-12 note_text">
+                    <p>
+                        <!-- Note: This is a probabilistic(CPM) software -->
+                    </p>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-m-6 start_problem_button">
+                    <input type="submit" name="start_problem" value="Start Problem" class="start_and_close_btn">
+                </div>
+                <div class="col-m-6 back_problem_button">
+                    <a href="../../index.html">
+                    <input type="submit" name="cancle_problem" value="Cancle Problem" class="back_and_close_btn">
+                </a>
+                </div>
+            </div>       
+        </div>
+    </div>
+
+    <!-- End of problem Specification Section -->
+
+    <!-- Variable Specification Section -->
+
+    <div class="variable_declaration_div">
+            <div class="variable_declaration_header">            
+                    <p>
+                        Variable Declarations
+                    </p>
+            </div>
+            <div class="variable_declaration_body">
+                <div class="row">
+                    <div class="col-m-12">
+                        <table class="spec_table">
+                            <tr id="">
+                                <th>
+                                    Activity Number
+                                </th>
+                                <th>
+                                    Activity Name
+                                </th>
+                                <th>
+                                    Immediate Predecessor
+                                </th>
+                                <th>
+                                    Normal Time
+                                </th>
+                            </tr>
+                            <tr class="var_rows" id="row0">
+                                <td>
+                                    <span> 1 </span>
+                                </td>
+                                <td>
+                                    <input type="text" name="" id="activity_names">
+                                </td>
+                                <td>
+                                    <input type="text" name="" id="immediate_predesessor">
+                                </td>
+                                <td>
+                                    <input type="text" name="" id="activity_duration">
+                                </td>
+                            </tr>                            
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-m-6 solve_problem_button">
+                            <input type="submit" name="start_problem" value="Solve Problem" class="solve_main_problem_btn">
+                        </div>
+                        <div class="col-m-6 back_problem_button">
+                            <input type="submit" name="cancle_problem" value="Go Back" class="back_main_problem_btn">
+                        </div>
+                    </div>
+            </div>
+    </div>
+
+    <!-- End of Variable spec -->
+
+    <!-- Solution Section -->
+
+ <div class="solution_declaration_div"> 
+        <div class="solution_declaration_header">            
+                <p>
+                    Problem Solution
+                </p>
+        </div>
+        <div class="solution_declaration_body">
+            <div class="row">
+                <div class="col-m-12">
+                    <table id="solut">
+                        <tr>
+                            <th>
+                                Activity Number
+                            </th>
+                            <th>
+                                Activity Name
+                            </th>
+                            <th>
+                                On Critical Path
+                            </th>
+                            <th>
+                                Activity Time
+                            </th>
+                            <th>
+                                    Earliest Start
+                                </th>
+                                <th>
+                                    Earliest Finish
+                                </th>
+                                <th>
+                                    Latest Start
+                                </th>
+                                <th>
+                                    Latest Finish
+                                </th>
+                                <th>
+                                    Slack 
+                                </th>
+                        </tr>
+                       
+                    </table>
+                </div>
+
+                <hr><hr>
+
+                <div class="row">
+                <div class="col-m-12">
+                    <div class="col-m-2 problem_solution_report_title">
+                        <p>
+                            Project Completion Time is 
+                        </p>
+                    </div>
+                    <div class="col-m-2 problem_solution_report_value">
+                        <p>
+                            <span>
+                                
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-m-8">
+
+                    </div>
+                </div>
+            </div>
+                <hr><hr>
+                <div class="row">
+                        <div class="col-m-6 solve_problem_button">
+                            <input type="submit" name="start_problem" value="Print Solution" class="print_solution_btn">
+                        </div>
+                        <div class="col-m-6 back_problem_button">
+                            <input type="submit" name="cancle_problem" value="Solve Another Problem" class="back_main_problem_btn">
+                        </div>
+                    </div>
+            </div>
+        </div>
+</div> -->
+
+    <!-- End of solution section -->
+
+<script src="../../scripts/js/prob_spec.js"></script>     
+</body>
+</html>
